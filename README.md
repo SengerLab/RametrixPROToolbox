@@ -23,7 +23,7 @@ This function performs a leave-one-out validation of DAPC models created by the 
 
 Results = LeaveOneOut(keystone, whichfactor, numberofpcs, positive_label, whichspectraset, AdditionalExclusions)
 
-keystone: created by the RametrixTM LITE Toolbox. i.e., type 'keystone' (without quotes) here.
+keystone: created by the RametrixTM LITE Toolbox. i.e., type 'keystone' (without quotes) here.\n
 whichfactor: specifies the factor to be examined. This is the number of the column in keystone.RDAModel.Factors. i.e., a numerical value
 numberofpcs: the number of PCs to be included in the DAPC model. i.e., a numerical value
 positive_label: the title of the positive treatment samples. This must appear exactly as it appears in keystone.RDAModel.Factors. i.e., a label eclosed in quotes
