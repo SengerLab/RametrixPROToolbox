@@ -5,6 +5,8 @@ Latest update: March 24, 2019
 
 Please cite: Senger RS, Robjertson JL (2019) The RametrixTM PRO Toolbox v1.0 for MATLAB®. Submitted to PeerJ Computational Sciences
 
+The dataset analyzed in the above article is available here.
+
 The RametrixTM PRO Toolbox v1.0 first requires PCA and DAPC models created by the RametrixTM LITE Toolbox. i.e., the RametrixTM LITE Toolbox must be run before the RametrixTM PRO Toolbox.
 
 The RametrixTM LITE Toolbox is located at: https://github.com/SengerLab/RametrixLITEToolbox
