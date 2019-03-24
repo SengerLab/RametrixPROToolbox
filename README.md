@@ -1,11 +1,17 @@
 # RametrixPROToolbox
 The RametrixTM PRO Toolbox v1.0 for MATLAB
 
+Latest update: March 24, 2019
+
 Please cite: Senger RS, Robjertson JL (2019) The RametrixTM PRO Toolbox v1.0 for MATLAB®. Submitted to PeerJ Computational Sciences
 
 The RametrixTM PRO Toolbox v1.0 first requires PCA and DAPC models created by the RametrixTM LITE Toolbox. i.e., the RametrixTM LITE Toolbox must be run before the RametrixTM PRO Toolbox.
 
 The RametrixTM LITE Toolbox is located at: https://github.com/SengerLab/RametrixLITEToolbox
+
+Installation Instructions:
+
+MATLAB R2016a or later is required. Download the 'Rametrix(TM) PRO Toolbox v1.0.mtlbx' file from this GitHub site and move it to the desired location in your file system. Double-click the .mtlbx file to start MATLAB and open the install dialog box. Click 'Install'. Functions (described below) are run from the Command Window in MATLAB.
 
 The RametrixTM PRO Toolbox v1.0 contains two functions:
 
