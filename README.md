@@ -16,6 +16,7 @@ MATLAB R2016a or later is required. Download the 'Rametrix(TM) PRO Toolbox v1.0.
 The RametrixTM PRO Toolbox v1.0 contains two functions:
 
 Function 1: LeaveOneOut.m
+
 This function performs a leave-one-out validation of DAPC models created by the RametrixTM LITE Toolbox.  It is called as a function in the command window using the following command:
 
 Results = LeaveOneOut(keystone, whichfactor, numberofpcs, positive_label, whichspectraset, AdditionalExclusions)
@@ -31,6 +32,7 @@ Results: an output table containing accuracy (percent predicted correctly); sens
 Example: Results = LeaveOneOut(keystone, 40, 'Treated', 3, []); 
 
 Function 2: RandomAccuracy.m
+
 This function returns accuracy, sensitivity, and selectivity should leave-one-out predictions be assigned by random chance.  It is called as a function in the command window using the following command:
 
 Results = RandomAccuracy(keystone, whichfactor, iterations)
