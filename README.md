@@ -14,7 +14,7 @@ The RametrixTM LITE Toolbox is located at: https://github.com/SengerLab/Rametrix
 Installation Instructions:
 
 MATLAB R2016a or later is required. Download the 'Rametrix(TM) PRO Toolbox v1.0.mtlbx' file from this GitHub site and move it to the desired location in your file system. Double-click the .mtlbx file to start MATLAB and open the install dialog box. Click 'Install'. 
-Functions (described below) are run from the Command Window in MATLAB.
+Functions (described below) are run from the Command Window in MATLAB. An example using the RametrixTM PRO Toolbox v1.0 with the included dataset is also described below.
 
 The RametrixTM PRO Toolbox v1.0 contains two functions:
 
@@ -39,7 +39,6 @@ enter [].
 
 Results: an output table containing accuracy (percent predicted correctly); sensitivity (true positive rate); selectivity (true negative rate)
 
-Example: Results = LeaveOneOut(keystone, 40, 'Treated', 3, []); 
 
 Function 2: RandomAccuracy.m
 
@@ -55,4 +54,27 @@ iterations: the number of iterations to perform. The suggested value here is 100
 
 Results: Results: an output table containing accuracy (percent predicted correctly); sensitivity (true positive rate); selectivity (true negative rate)
 
-Example: Results = RandomAccuracy(keystone, 12, 100000)
+
+Example: Using the included 'Healty Unhealthy Dataset (for RametrixTM LITE v1.1)'
+
+Step 1: Download and unpack 'Healty Unhealthy Dataset (for RametrixTM LITE v1.1)' or 'Healty Unhealthy Dataset (for RametrixTM LITE v1.0)'
+
+Step 2: In MATLAB, load this dataset using the RametrixTM LITE Toolbox v1.0 or v1.1 (see instructions with the RametrixTM LITE Toolbox on how to do this)
+
+Step 3: In the Explore tab, average all spectra and select 'Baselined and Vector Normalized' using the default parameters
+
+Step 4: In the PCA tab, select the factor 'Status' from the drop-down menu and select the 'Run PCA' button. This will generate PCA results.
+
+Step 5: In the DAPC tab, input the number 6 into the 'Number of PCs included box' and select the 'Run DAPC' button. This will generate DAPC results.
+
+Step 6: In the MATLAB Command Window, run the leave-one-out analysis for the DAPC model constructed with 6 PCs by executing the command: Results = LeaveOneOut(keystone, 7, 6, 'Unhealthy', 3, []);
+
+The following results should be obtained: Accuracy = 0.993; Sensitivity = 1; Selectivity = 0.95
+
+Step 7: Repeat the leave-one-out analysis for a DAPC model constructed with 100 PCs by executing the command: Results = LeaveOneOut(keystone, 7, 100, 'Unhealthy', 3, []);
+
+The following results should be obtained: Accuracy = ; Sensitivity = ; Selectivity =
+
+Step 8: Determine the random chance accuracy, sensitivity, and selectivity by executing the command: Results = RandomAccuracy(keystone, 7, 100000)
+
+The following results should be obtained for both 'Healthy' and 'Unhealthy' factors: Random Accuracy = 0.5; Random Sensitivity = 0.5; Random Selectivity = 0.5
