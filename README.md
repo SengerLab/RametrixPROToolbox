@@ -1,7 +1,7 @@
 # RametrixPROToolbox
 The RametrixTM PRO Toolbox v1.0 for MATLAB
 
-Latest update: March 24, 2019
+Latest update: March 25, 2019
 
 Please cite: Senger RS, Robjertson JL (2019) The RametrixTM PRO Toolbox v1.0 for MATLAB®. Submitted to PeerJ Computational Sciences
 
