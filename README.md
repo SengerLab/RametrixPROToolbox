@@ -1,4 +1,12 @@
 # RametrixPROToolbox
+The RametrixTM PRO Toolbox v1.1 for MATLAB
+
+Latest update: January 3, 2020
+
+The RametrixTM PRO Toolbox v.1.1 operates the same as v1.0 but enables calculation of positive predictive values (PPV) and negative predictive values (NPV) in addition to model accuracy, sensitivity, and specificity.
+
+See the installation and operation instructions for v1.1 below.  They are the same as for v1.0.
+
 The RametrixTM PRO Toolbox v1.0 for MATLAB
 
 Latest update: March 25, 2019
